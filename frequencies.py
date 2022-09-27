@@ -3,9 +3,7 @@
 from collections import Counter
 
 def frequencies(items):
-    frequencies = {}
-    for values in items:
-        frequencies.append()
-    return Counter(frequencies.split())
-
-    return frequencies
+    frequencies = []
+    for value in items:
+        frequencies.append(value)
+    return Counter(frequencies)
