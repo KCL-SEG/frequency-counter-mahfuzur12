@@ -1,9 +1,14 @@
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
-from collections import Counter
 
 def frequencies(items):
-    frequencies = []
+    frequencies = {}
     for value in items:
-        frequencies.append(value)
-    return Counter(frequencies)
+        string_value = str(value)
+        if not string_value in frequencies:
+            frequencies[string_value] = 1
+        else:
+            frequencies[string_value] += 1
+    
+    return frequencies
+            
